@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8E293D">
+  <meta name="description" content="The Bean Loft — specialty coffee, signature beverages, refreshing mocktails, mojitos, patisserie and café favourites.">
+  <meta property="og:title" content="THE BEAN LOFT — Where You Savour Each Sip">
+  <meta property="og:description" content="Explore the menu at The Bean Loft.">
+  <meta property="og:type" content="website">
+  <title>THE BEAN LOFT — Where You Savour Each Sip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand-mini" href="#top" aria-label="The Bean Loft home">
+      <span>THE</span>
+      <strong>BEAN LOFT</strong>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SPECIALTY COFFEE · PATISSERIE · COLD CREATIONS</p>
+        <h1>The Bean<br><em>Loft.</em></h1>
+        <p class="hero-tagline">Where you savour each sip.</p>
+        <p class="hero-intro">A little corner for slow coffee, bright glasses, good food and even better pauses.</p>
+        <a class="btn btn-primary" href="#menu">Explore the menu <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-ring"></div>
+        <img class="hero-logo" src="images/logo.jpg" alt="">
+        <div class="hero-caption">SIP<br>·<br>SAVOUR</div>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="section-kicker">01 / THE LOFT</div>
+      <div>
+        <h2>A menu made for <em>moments.</em></h2>
+        <p>From familiar coffee rituals to colourful cold pours and small plates worth lingering over, find your next favourite in the menu below.</p>
+      </div>
+    </section>
+
+    <nav class="category-nav" id="categoryNav" aria-label="Menu categories">
+      <div class="nav-inner">
+        <a href="#sides" data-category="sides">Sides & Bites</a>
+        <a href="#classic" data-category="classic">Classic Beverages</a>
+        <a href="#signature" data-category="signature">Signature Coffees</a>
+        <a href="#indian" data-category="indian">Indian Speciality</a>
+        <a href="#mojitos" data-category="mojitos">Mojitos</a>
+        <a href="#mocktails" data-category="mocktails">Mocktails</a>
+      </div>
+    </nav>
+
+    <section class="menu-section menu-section-first" id="menu">
+      <div class="section-head">
+        <div>
+          <span class="section-number">02</span>
+          <h2>Our <em>menu.</em></h2>
+        </div>
+        <div class="search-wrap">
+          <button id="searchButton" class="search-button" aria-label="Search menu">⌕ <span>Search</span></button>
+          <div class="search-panel" id="searchPanel" hidden>
+            <input id="searchInput" type="search" placeholder="Search coffee, cheesecake, mojito..." autocomplete="off">
+            <button id="clearSearch" type="button" aria-label="Clear search">×</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="veg">Veg</button>
+        <button class="filter" data-filter="nonveg">Non-Veg</button>
+        <button class="filter" data-filter="coffee">Coffee</button>
+        <button class="filter" data-filter="cold">Cold</button>
+        <button class="filter" data-filter="bakery">Bakery</button>
+      </div>
+      <div id="searchStatus" class="search-status" hidden></div>
+    </section>
+
+    <section class="menu-section" id="sides" data-section="sides">
+      <div class="section-head compact">
+        <div><span class="section-number">03</span><h2>Sides & <em>Bites</em></h2></div>
+        <p class="section-note">Little plates. Big pauses.</p>
+      </div>
+      <div class="editorial-split">
+        <div class="feature-visual cream-panel">
+          <img src="images/food/avocado-toast.png" alt="Avocado toast" loading="lazy">
+          <span class="vertical-note">MADE TO SHARE</span>
+        </div>
+        <div class="menu-column">
+          <div class="subhead">Vegetarian</div>
+          <div class="menu-list" data-list="sides-veg"></div>
+          <div class="subhead">Non-Vegetarian</div>
+          <div class="menu-list" data-list="sides-nonveg"></div>
+          <div class="subhead">Bakery</div>
+          <div class="menu-list" data-list="bakery"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <p>“Good coffee is a reason to slow down.”</p>
+      <span>THE BEAN LOFT</span>
+    </section>
+
+    <section class="menu-section" id="classic" data-section="classic">
+      <div class="section-head compact">
+        <div><span class="section-number">04</span><h2>Classic <em>Beverages</em></h2></div>
+        <p class="section-note">The familiar favourites, carefully made.</p>
+      </div>
+      <div class="beverage-grid">
+        <div class="beverage-panel">
+          <div class="subhead">Hot</div>
+          <div class="menu-list" data-list="classic-hot"></div>
+        </div>
+        <div class="beverage-panel beverage-panel-accent">
+          <div class="subhead">Cold</div>
+          <div class="menu-list" data-list="classic-cold"></div>
+          <div class="cold-accent">
+            <img src="images/coffee/iced-latte.png" alt="Iced latte" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section" id="signature" data-section="signature">
+      <div class="feature-copy">
+        <span class="section-number">05</span>
+        <p class="eyebrow">HOUSE FAVOURITES</p>
+        <h2>Signature<br><em>coffees.</em></h2>
+        <p>Layered, aromatic and made for the kind of conversations that run a little longer than planned.</p>
+      </div>
+      <div class="signature-image">
+        <div class="image-orbit"></div>
+        <img src="images/coffee/spanish-latte.png" alt="Spanish latte" loading="lazy">
+        <span class="image-label">SPANISH<br>LATTE</span>
+      </div>
+      <div class="signature-list">
+        <div class="subhead">Hot</div>
+        <div class="menu-list" data-list="signature-hot"></div>
+        <div class="subhead">Cold</div>
+        <div class="menu-list" data-list="signature-cold"></div>
+        <p class="tiny-note">Additional flavours / whipped cream +₹30 each</p>
+      </div>
+    </section>
+
+    <section class="menu-section" id="indian" data-section="indian">
+      <div class="section-head compact">
+        <div><span class="section-number">06</span><h2>Indian <em>Speciality</em></h2></div>
+        <p class="section-note">Familiar flavours, a fresh point of view.</p>
+      </div>
+      <div class="indian-layout">
+        <div class="indian-copy">
+          <p class="big-script">Rooted<br>in flavour.</p>
+          <div class="menu-list" data-list="indian-hot"></div>
+        </div>
+        <div class="smoothie-panel">
+          <img src="images/mocktails/tropical-mango-mocktail.png" alt="Tropical mango drink" loading="lazy">
+          <div>
+            <div class="subhead">Smoothies</div>
+            <div class="menu-list" data-list="smoothies"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="drink-section" id="mojitos" data-section="mojitos">
+      <div class="drink-heading">
+        <span class="section-number">07</span>
+        <h2>Mojitos, <em>please.</em></h2>
+        <p>Bright, cold and unapologetically refreshing.</p>
+      </div>
+      <div class="drink-stage">
+        <div class="drink-card drink-one"><img src="images/mojitos/strawberry-mojito.png" alt="Strawberry mojito" loading="lazy"><span>STRAWBERRY</span></div>
+        <div class="drink-card drink-two"><img src="images/mojitos/mint-mojito.png" alt="Mint mojito" loading="lazy"><span>MINT</span></div>
+        <div class="drink-card drink-three"><img src="images/mojitos/mango-mojito.png" alt="Mango mojito" loading="lazy"><span>MANGO</span></div>
+      </div>
+      <div class="drink-menu" data-list="mojitos"></div>
+      <div class="drink-mini-row">
+        <img src="images/mojitos/watermelon-mojito.png" alt="Watermelon mojito" loading="lazy">
+        <img src="images/mojitos/apple-mojito.png" alt="Apple mojito" loading="lazy">
+      </div>
+    </section>
+
+    <section class="mocktail-section" id="mocktails" data-section="mocktails">
+      <div class="mocktail-hero">
+        <span class="section-number">08</span>
+        <h2>Cold little<br><em>celebrations.</em></h2>
+        <p>Our mocktails are made for the first sip to feel like a small occasion.</p>
+      </div>
+      <div class="mocktail-feature">
+        <img src="images/mocktails/strawberry-basil-fizz.png" alt="Strawberry basil fizz" loading="lazy">
+        <div>
+          <span class="eyebrow">THE VISUAL FAVOURITE</span>
+          <h3>Strawberry<br><em>Basil Fizz</em></h3>
+          <strong>₹200</strong>
+        </div>
+      </div>
+      <div class="mocktail-grid">
+        <div class="menu-list" data-list="mocktails"></div>
+      </div>
+      <p class="tiny-note">Additional flavours / whipped cream +₹30 each</p>
+    </section>
+
+    <section class="sweet-finish">
+      <div class="sweet-image">
+        <img src="images/patisserie/biscoff-cheesecake.png" alt="Biscoff cheesecake" loading="lazy">
+      </div>
+      <div class="sweet-copy">
+        <span class="section-number">09</span>
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2>Save room<br>for <em>sweet.</em></h2>
+        <p>Something soft, something chocolatey, something worth the extra five minutes.</p>
+        <div class="mini-sweets">
+          <span>Biscoff Cheesecake <b>₹220</b></span>
+          <span>Red Velvet Cheesecake <b>₹220</b></span>
+          <span>Bombolini <b>₹120</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <img src="images/logo.jpg" alt="The Bean Loft logo" loading="lazy">
+      <div>
+        <p class="eyebrow">THANK YOU FOR LINGERING</p>
+        <h2>Scan. Sip.<br><em>Savour.</em></h2>
+        <p class="closing-line">Where you savour each sip.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span>THE</span>
+      <strong>BEAN LOFT</strong>
+      <p>Where you savour each sip.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#signature">Signature Coffees</a>
+      <a href="#mocktails">Mocktails</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer-note">
+      <p>Prices are inclusive of 5% GST.</p>
+      <p>© <span id="year"></span> The Bean Loft</p>
+    </div>
+  </footer>
+
+  <div class="mobile-dock">
+    <a href="#menu">Menu</a>
+    <button id="dockSearch" type="button">Search</button>
+    <a href="#top">Top ↑</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
